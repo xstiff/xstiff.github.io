@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="form-box" id="formbox">
+        <div class="close-btn">
+          <button onclick="Close()"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <span>Specify length of password [ 4-32 ]</span>
+        <br>
+        <input type="number" value="10" placeholder="Specify length" id="value-len">
+        <br>
+        <div class="check-field">
+          <label for="az"> a-z </label><br>
+          <input type="checkbox" value="az" checked id="value-az">
+        </div>
+
+      <div class="check-field">
+        <label for="caps"> A-Z </label>
+        <br>
+        <input type="checkbox" value="caps" id="value-caps">
+
+      </div>
+        
+      <div class="check-field">
+        <label for="09"> 0 - 9 </label><br>
+        <input type="checkbox" value="09" checked id="value-09">
+      </div>
+
+        <div class="check-field">
+        <label for="special"> !@#$ </label><br>
+        <input type="checkbox" value="special" id="value-special">
+      </div>
+        
+      <br>
+
+      <button class="save" onclick="Save()">Save</button>
+
+      </div>
+
+
+
+    <div class="box">
+      
+      <div class="header">
+        <h1>Generate a </h1>
+        <h2 style="color:rgba(52, 211, 153, 1)">random password</h2>
+
+        <p>Never use an insecure password again. </p>
+        <button onclick="generate()"><i class="fa-solid fa-bolt"></i>&nbsp; Generate passwords</button>
+        <button style="width:50px;" onclick="Open()" ><i class="fa-solid fa-gears"></i></button>
+
+      </div>
+
+     <div class="footer">
+        <p id="pass-1" onclick="copy(1)">...</p>
+        <p id="pass-2" onclick="copy(2)">...</p>
+
+        <p id="pass-3" onclick="copy(3)">...</p>
+        <p id="pass-4" onclick="copy(4)">...</p>
+
+        <p id="pass-5" onclick="copy(5)">...</p>
+        <p id="pass-6" onclick="copy(6)">...</p>
+        
+     </div>
+    
+    
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/44c19d3cc9.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!--
+  How?
+  1. Make array with characters
+  2. choose random characters
+  3. display 4 random passwords
+  4. abibiltiy to set passowrd length
+  5. 1-click copy
+
+
+-->
