@@ -89,7 +89,7 @@ svg path{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 50%;
+    width:500px;
     flex-wrap: wrap;
 
 }
