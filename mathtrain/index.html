@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathGame</title>
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    
+    <div class='screen-cover'>
+        <div class="flex">
+            <button class="play-btn">Play</button>
+        </div>
+    </div>
+
+    <main>
+        <h2 class="time">Time left: <span class="timeleft">5.0</span>s</h2>
+
+        <div class="container-eq">
+            <span class='equasion'> ? ?</span>
+            
+            <div class="input-container">
+                <input class='input_' type="number" placeholder="?">
+            </div>
+
+            <div class="btn-container">
+                <button class="btn">
+                    SKIP
+                </button>
+            </div>
+
+
+            <div class="stats">
+                <p class="stat-obj">Total:     <span class="total">0</span>     </p>
+                <p class="stat-obj">Correct:   <span class="correct">0</span>    </p>
+                <p class="stat-obj">Avg. time : <span class="avgtime">0</span>s   <br> <span class="showmore">( show more )</span></p>
+            </div>
+
+            <div class="stat-list">
+                <h2>Your previous time list:</h2>
+                <ul class="showmore-list">
+                    
+                </ul>
+
+            </div>
+        </div>
+
+
+    </main>
+    
+
+    <script src="src/index.js"></script>
+</body>
+</html>
